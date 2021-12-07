@@ -42,6 +42,10 @@ Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Roboto:wght@300&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Lexend";
 }
@@ -65,7 +69,7 @@ a {
 
 .container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  
   /*auto is a placeholder*/
 }
 
@@ -83,3 +87,17 @@ a {
   background-color:hsl(179, 100%, 13%);
 
 }
+
+@media (max-width: 375px) {
+  .container {
+    display: grid;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
