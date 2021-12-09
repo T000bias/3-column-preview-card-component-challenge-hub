@@ -1,59 +1,94 @@
+
 /*
 
+
 # Front-end Style Guide
-
 ## Layout
-
 The designs were created to the following widths:
-
 - Mobile: 375px
 - Desktop: 1440px
-
 ## Colors
-
 ### Primary
-
 Bright orange: hsl(31, 77%, 52%)
 Dark cyan: hsl(184, 100%, 22%)
 Very dark cyan: hsl(179, 100%, 13%)
-
 ### Neutral
-
 Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
 Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
-
 ## Typography
-
 ### Body Copy
-
 - Font size: 15px
-
 ### Font
-
 - Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
 - Weights: 400
-
 - Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
 - Weights: 700
-
-
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Roboto:wght@300&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Roboto:wght@300&display=swap');
 
 * {
   margin: 0;
   padding: 0;
 }
+
+/*Given*/
 body {
-  font-family: "Lexend";
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-
-p {
-  font: hsla(0, 0%, 100%, 0.75) ;
+.container {
+  border-radius:10px ;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-align:left;
 }
+
+.icon {
+  width: 100%;
+  max-width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.vheader {
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display'}
+
+
+
+
+.container-card-1 {
+background-color: hsl(31, 77%, 52%);
+
+}
+
+.container-card-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.container-card-3 {
+  background-color:hsl(179, 100%, 13%) ;
+}
+
+.text {
+  font-family: 'Big Shoulders';
+}
+
 
 .attribution { 
   font-size: 11px; text-align: center; 
@@ -63,41 +98,4 @@ p {
   color: hsl(228, 45%, 44%); 
 }
 
-a {
-  cursor: pointer;
-}
-
-.container {
-  display: grid;
-  
-  /*auto is a placeholder*/
-}
-
-.container-card-1 {
-  background-color:hsl(31, 77%, 52%);
-
-}
-
-.container-card-2 {
-  background-color:hsl(184, 100%, 22%);
-
-}
-
-.container-card-3 {
-  background-color:hsl(179, 100%, 13%);
-
-}
-
-@media (max-width: 375px) {
-  .container {
-    display: grid;
-  }
-}
-
-@media (min-width: 1440px) {
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
 
